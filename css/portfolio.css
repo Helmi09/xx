@@ -225,7 +225,6 @@ header  nav ul li :hover{
 .about img{
 height:200px;
 margin-bottom:10px;
-background-image: linear-gradient(to right, rgb(0, 255, 135), rgb(2, 239, 255));
 border-radius: 15px;
 background-size: cover;
 background-position: center;
@@ -280,7 +279,7 @@ background-position: center;
   color:#0072B1
 }
 .top .social a:hover{
-  background-image: linear-gradient(to right, rgb(0, 255, 135), rgb(2, 239, 255));
+
   color:#FFFFFF;
   transform: scale(1.03);
   
@@ -560,12 +559,13 @@ background-image: linear-gradient( 109.6deg, rgba(110,123,251,1) 91.1% , rgba(11
 .elimgg{
   font-weight:bold;
   font-size:50px;
+  background-image: url(../img/shop-button.png);
                                     }
 .project .container .cr .el .elimgg{
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: inherit;
     height:100%;
     width:100%;
                                  }
@@ -913,4 +913,97 @@ header{
     height: 50%;
     padding-top: 35px;
   
+}
+
+
+a video{
+  border-width: 0px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  transform: scale(3.5);
+}
+#vd :hover{
+  
+    background-image: transparent;
+  
+    transform: scale(1.03);
+  
+  
+}
+/*do media query max widht 355px*/
+
+@media (max-width: 345px) and (min-width: 340px) {
+  a video{
+    height:50%;
+    transform: scale(6.5);
+  }
+  
+}
+/*media queri betwwen 340px and 331px*/
+@media (max-width: 339px) and (min-width: 336px) {
+  a video{
+    height:50%;
+    transform: scale(6.5);
+  }
+  
+}
+@media (max-width: 335px) and (min-width: 334px) {
+  a video{
+    height:38%;
+    transform: scale(9);
+  }
+  
+}
+@media (max-width: 333px) and (min-width: 332px) {
+  a video{
+    height: 34%;
+    transform: scale(11.5);
+  }
+  
+}
+@media (max-width: 331px) and (min-width: 325px) {
+  a video{
+    height: 34%;
+    transform: scale(11.5);
+  }
+  
+}
+@media (max-width: 330px) and (min-width: 325px) {
+  a video{
+    height: 39%;
+    transform: scale(6);
+  }
+  
+}
+@media (max-width: 318px) and (min-width: 311px) {
+  a video{
+    height: 42.5%;
+    transform: scale(8.5);
+  }
+  
+}
+@media (max-width: 310px)  {
+  a video{
+    display: none;
+  }
+   #vd{
+    background-image: url(../img/vsco.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%;
+    padding-bottom: 34px;
+    
+   }
+  
+}
+.awalech{
+  font-size: 13px;
 }
